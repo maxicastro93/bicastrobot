@@ -5,7 +5,7 @@ import os
 
 # Configura tu token y chat_id de Telegram como variables de entorno
 BOT_TOKEN = os.environ.get('5851311227:AAEZCgzvjmv0F8btce0X7v1zI8xAO0L4oq4')
-CHAT_ID = os.environ.get('bicastroBot')
+CHAT_ID = os.environ.get('maxicastrobot')
 
 def check_website(url):
     try:
@@ -25,7 +25,7 @@ def send_telegram_message(message):
 
 if __name__ == '__main__':
     while True:
-        if check_website('https://www.example.com'):
+        if check_website('construirapp.ar'):
             send_telegram_message('La web está en funcionamiento')
         else:
             send_telegram_message('La web no está en funcionamiento')
